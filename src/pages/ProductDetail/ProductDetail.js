@@ -9,7 +9,7 @@ const ProductDetail = () => {
     const [product, setProduct] = useState({})
  
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${id}`)
+        fetch(`https://serene-headland-52528.herokuapp.com/product/${id}`)
         .then(res => res.json())
         .then(data => setProduct(data))
     },[id])
@@ -20,7 +20,7 @@ const ProductDetail = () => {
     const {user} = useAuth()
     const { register, handleSubmit, reset, } = useForm();
     const onSubmit = data => {
-      fetch('http://localhost:5000/orders', {
+      fetch('https://serene-headland-52528.herokuapp.com/orders', {
         method: 'POST',
         headers:{
           'content-type':'application/json'

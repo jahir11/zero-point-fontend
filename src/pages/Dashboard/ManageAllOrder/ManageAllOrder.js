@@ -11,7 +11,7 @@ import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 const ManageAllOrder = () => {
     const [allorders , setAllOrders] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/allorders')
+        fetch('https://serene-headland-52528.herokuapp.com/allorders')
         .then(res => res.json())
         .then(data => setAllOrders(data))
     },[])
@@ -19,7 +19,7 @@ const ManageAllOrder = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete?')
         if(proceed){
-            const url = `http://localhost:5000/deletePatient/${id}`
+            const url = `https://serene-headland-52528.herokuapp.com/deletePatient/${id}`
             console.log(url)
         fetch(url, {
             method: 'DELETE'

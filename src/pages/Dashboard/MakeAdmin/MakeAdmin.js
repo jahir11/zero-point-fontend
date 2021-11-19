@@ -14,7 +14,7 @@ const MakeAdmin = () => {
         const user = { email };
         alert('button click ok')
         console.log(user)
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://serene-headland-52528.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

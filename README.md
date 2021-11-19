@@ -1,6 +1,6 @@
 ### zero point website
 
-This website using React, firebase, react router, node, express, mongodb etc. [zero point live site](https://github.com/facebook/create-react-app).
+This website using React, firebase, react router, node, express, mongodb etc. [zero point live site](https://zero-point-e84a7.web.app/).
 
 
 

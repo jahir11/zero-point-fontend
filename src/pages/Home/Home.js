@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import AboutUs from '../AboutUs/AboutUs';
-import Products from '../Products/Products';
+import HomeProducts from '../HomeProducts/HomeProducts';
 import Reviews from '../Reviews/Reviews';
 import './Home.css'
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
                 </NavLink>
                 </div>
             </div>
-            <Products/>
+            <HomeProducts/>
             <AboutUs/>
             <Reviews/>
         </div>

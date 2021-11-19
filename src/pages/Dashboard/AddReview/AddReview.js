@@ -4,7 +4,7 @@ import './AddReview.css'
 const AddReview = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/addReview', {
+        fetch('https://serene-headland-52528.herokuapp.com/addReview', {
           method: 'POST',
           headers:{
             'content-type':'application/json'

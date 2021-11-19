@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
 import Product from '../Product/Product';
 
-const Products = () => {
+const HomeProducts = () => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
@@ -18,11 +18,11 @@ const Products = () => {
             </div>
             <Row xs={1} md={3} className="g-4">
             {
-                products.map(product => <Product key={product._id} product={product}/>)
+                products.slice(0,6).map(product => <Product key={product._id} product={product}/>)
             }
             </Row>
         </div>
     );
 };
 
-export default Products;
+export default HomeProducts;
