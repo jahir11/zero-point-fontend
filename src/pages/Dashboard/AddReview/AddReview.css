@@ -1,0 +1,11 @@
+.review-form input,textarea{
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.review-form textarea{
+    height:200px ;
+}
